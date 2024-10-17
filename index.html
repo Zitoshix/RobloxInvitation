@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <title>Goblox</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="toggle-theme">🌙</div> <!-- Toggle for Dark/Light mode -->
+    <!-- Welcome Page Section -->
+    <div id="intro-section" class="section full-screen active">
+        <div class="centered-content">
+            <h1>Are You Ready?</h1>
+            <button id="start-button">Enter</button>
+        </div>
+    </div>
+
+    <!-- Message Section -->
+    <div id="message-section" class="section full-screen hidden">
+        <div class="centered-content">
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <!-- Video Section (YouTube Embed) -->
+    <div id="video-section" class="section full-screen hidden">
+        <iframe id="youtube-video" class="full-screen-video" 
+                src="https://www.youtube.com/embed/dmAfiY7yomo?enablejsapi=1&autoplay=1" 
+                frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Confession Section -->
+    <div id="confession-section" class="section full-screen hidden">
+        <div class="centered-content">
+            <p class="fade-in delay-1">I've been thinking about this for a while...</p>
+            <p class="fade-in delay-2">You're the one who makes me smile like no one else does...</p>
+            <p class="fade-in delay-3">Everything feels right when you're around...</p>
+            <p class="fade-in delay-4">I can't stop thinking about the way you laugh...</p>
+            <p class="fade-in delay-5">The way you light up every room you walk into...</p>
+            <p class="fade-in delay-7">And now, I can't help but ask...</p>
+            <h2 class="fade-in delay-8">Will you be my girlfriend?</h2>
+            <button id="discord-button" class="fade-in delay-9">Answer Here ❤️</button>
+
+            <div id="choices" class="hidden fade-in delay-10">
+                <button id="yes-button">Yes</button>
+                <button id="no-button">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Section -->
+    <div id="thank-you-section" class="section full-screen hidden">
+        <div class="centered-content">
+            <h1>Thank You!</h1>
+            <p>Your trust means the world to me. 💖</p>
+            <p>If you would like to send me a message directly on Instagram, please type your message below:</p>
+            <textarea id="message-input" placeholder="Type your message here..." rows="4" cols="50"></textarea>
+            <br>
+            <button id="send-message-button">Send Message</button>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
